@@ -35,4 +35,14 @@ class BaseModel():
             'updated_at': self.updated_at.strftime('%Y-%m-%dT%H:%M:%S.%f')
         }
 
+# Testing the BaseModel class
+my_model = BaseModel()
+print(my_model)
+
+my_model.save()
+print(my_model)
+
+my_model_json = my_model.to_dict()
+print(my_model_json)
+
 
