@@ -3,20 +3,16 @@
 import cmd
 
 class HBNBCommand(cmd.Cmd):
-    prompt = '(hbnb)' # Setting the prompt string
+    prompt = "(hbnb) "
 
     def do_quit(self, arg):
-        """quit command the program"""
-
-        return True # Returning true will exit the command loop
-
-    def do_EOF(self, arg):
-
-        print("")
+        """Quit command to exit the program"""
         return True
 
-    def empty_line(self):
-        pass
+    def do_EOF(self, arg):
+        """Exit the program"""
+        return True
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
+
